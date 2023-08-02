@@ -1,0 +1,16 @@
+// LOCALHOST
+GET http://localhost:3000/api/itinerarios
+###
+
+###
+POST http://localhost:3000/api/ HTTP/1.1
+content-type: application/json
+
+{
+    "ciudadOrigen": "Lima",
+    "ciudadDestino": "Cusco",
+    "horarioSalida": "15",
+    "horarioLlegada": "12",
+    "precioPasaje": "200",
+    "busAsignado": "456789"   
+}
