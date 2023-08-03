@@ -2,15 +2,35 @@
 GET http://localhost:3000/api/itinerarios
 ###
 
+GET http://localhost:3000/api/1
+###
+
 ###
 POST http://localhost:3000/api/ HTTP/1.1
 content-type: application/json
 
 {
-    "ciudadOrigen": "Lima",
-    "ciudadDestino": "Cusco",
-    "horarioSalida": "15",
-    "horarioLlegada": "12",
-    "precioPasaje": "200",
-    "busAsignado": "456789"   
+    "ciudadOrigen": "Arequipa",
+    "ciudadDestino": "Lima",
+    "horarioSalida": "10",
+    "horarioLlegada": "4",
+    "precioPasaje": "150",
+    "busAsignado": "543211"   
 }
+
+### 
+PUT http://localhost:3000/api/1 HTTP/1.1
+content-type: application/json
+
+{
+    "ciudadOrigen": "Ica",
+    "ciudadDestino": "Lima",
+    "horarioSalida": "3",
+    "horarioLlegada": "8",
+    "precioPasaje": "100",
+    "busAsignado": "987654"
+}
+
+###
+DELETE http://localhost:3000/api/5
+###
