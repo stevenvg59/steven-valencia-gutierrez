@@ -85,4 +85,8 @@ router.post('/register', async (req, res) => {
 
 });
 
+router.post('/login', (req, res) => {
+    res.render('dashboard', { user: 'Steven' });
+});
+
 module.exports = router;
