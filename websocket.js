@@ -1,4 +1,4 @@
-// WEBSOCKET
+// WEBSOCKET - not done yet
 const expressWs = require('express-ws');
 
 
@@ -13,13 +13,11 @@ function configureWebSocket(app) {
     // Manejamos la conexión del websocket aquí
     activeConnections.push(ws);
     ws.on('message', (message) => {
-        // Maneja los mensajes del cliente
-        // Puedes realizar acciones como enviar mensajes a todos los clientes conectados, guardar mensajes en la base de datos, etc.
+        
     });
 
     ws.on('close', () => {
-        // Maneja el cierre de la conexión del websocket
-        // Asegúrate de eliminar la conexión cerrada del array de conexiones activas
+        
     });
     });
 
