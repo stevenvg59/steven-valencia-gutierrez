@@ -8,6 +8,7 @@ module.exports = {
       const query = 'SELECT * FROM itinerarios';
       const result = await pool.query(query);
       res.json(result.rows);
+      console.log(result.rows);
     } catch (error) {
       res.status(500).json({ message: error.message });
     }

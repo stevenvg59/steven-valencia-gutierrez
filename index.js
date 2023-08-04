@@ -5,6 +5,13 @@ const bodyParser = require('body-parser');
 const { configureWebSocket } = require('./websocket');
 
 
+const passport = require('passport');
+const initializePassport = require('./passport-config');
+
+initializePassport(passport);
+
+
+
 const app = express();
 
 const port = 3000;
