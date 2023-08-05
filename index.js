@@ -10,8 +10,6 @@ const initializePassport = require('./passport-config');
 
 initializePassport(passport);
 
-
-
 const app = express();
 
 const port = 3000;
